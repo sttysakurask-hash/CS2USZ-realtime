@@ -2,7 +2,7 @@ const express = require("express");
 const {GameDig} = require("gamedig");
 const path = require("path");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const servers = [
   { id:"dm", name:"CS2USZ Deathmatch", type:"Deathmatch", host:"94.158.55.208", port:27024 },
